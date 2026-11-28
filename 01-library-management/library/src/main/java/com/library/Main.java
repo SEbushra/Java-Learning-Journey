@@ -9,7 +9,6 @@ public class Main {
 
         JUST_Library.addBook(book1);
         JUST_Library.addBook(book2);
-
         JUST_Library.viewBooks();
 
         JUST_Library.searchBookByTitle("Java Basics");

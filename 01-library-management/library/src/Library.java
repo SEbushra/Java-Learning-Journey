@@ -1,8 +1,12 @@
+package com.library;
+
 public class Library {
     private ArrayList<Book> books = new ArrayList<Book>();
 
     public void addBook(Book book) {
-        books.add(book);
+        if(!(books.contains(book))){
+            books.add(book);
+        }
     }
 
     public void viewBooks() {
@@ -20,6 +24,7 @@ public class Library {
             if (book.getTitle().equalsIgnoreCase(title)) {
                 return book;
             }
+            
         }
         return null;
     }
